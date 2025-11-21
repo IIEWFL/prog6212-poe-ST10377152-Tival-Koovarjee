@@ -1,0 +1,201 @@
+﻿@model ContractMonthlyClaimSystem.Models.Claim
+@{
+    ViewData["Title"] = "Submit New Claim";
+}
+
+<div class="container">
+    <h2>Submit New Claim</h2>
+    <hr />
+
+    
+    <div asp-validation-summary="All" class="alert alert-danger"></div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <form asp-action="Submit" enctype="multipart/form-data" method="post" id="claimForm">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="LecturerName" class="form-label"></label>
+                    <input asp-for="LecturerName" class="form-control" id="lecturerName" />
+                    <span asp-validation-for="LecturerName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ClaimMonth" class="form-label"></label>
+                    <input asp-for="ClaimMonth" type="month" class="form-control" id="claimMonth"
+                           min="@DateTime.Now.AddMonths(-12).ToString("yyyy-MM")"
+                           max="@DateTime.Now.ToString("yyyy-MM")" />
+                    <span asp-validation-for="ClaimMonth" class="text-danger"></span>
+                    <div class="form-text text-warning" id="monthWarning" style="display: none;">
+                        Warning: This month has already passed.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="HoursWorked" class="form-label"></label>
+                    <input asp-for="HoursWorked" class="form-control" id="hoursWorked"
+                           min="1" max="200" step="0.5" />
+                    <span asp-validation-for="HoursWorked" class="text-danger"></span>
+                    <div class="form-text">
+                        <span id="hoursStatus" class="text-success">✓ Valid hours</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label asp-for="HourlyRate" class="form-label"></label>
+                    <input asp-for="HourlyRate" class="form-control" id="hourlyRate"
+                           min="50" max="1000" step="0.01" />
+                    <span asp-validation-for="HourlyRate" class="text-danger"></span>
+                    <div class="form-text">
+                        <span id="rateStatus" class="text-success">✓ Valid rate</span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Total Amount (R)</label>
+                    <input type="text" class="form-control" id="totalAmount" value="0.00" readonly
+                           style="font-size: 1.2rem; font-weight: bold; color: #28a745;" />
+                    <div class="form-text">
+                        <span id="amountCategory" class="text-info">Standard claim amount</span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Notes" class="form-label"></label>
+                    <textarea asp-for="Notes" class="form-control" rows="3"
+                              placeholder="Optional: Add any additional notes or explanations..."></textarea>
+                    <span asp-validation-for="Notes" class="text-danger"></span>
+                    <div class="form-text">
+                        <span id="notesCount">0</span>/500 characters
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-3">
+                    <label for="supportingDocument" class="form-label">Supporting Document (Optional)</label>
+                    <input type="file" name="supportingDocument" class="form-control" id="supportingDocument"
+                           accept=".pdf,.docx,.xlsx,.jpg,.png" />
+                    <div class="form-text">
+                        <span id="fileStatus">Optional: Maximum file size 5MB. Allowed types: PDF, DOCX, XLSX, JPG, PNG</span>
+                    </div>
+                    <div id="filePreview" class="mt-2" style="display: none;">
+                        <i class="fas fa-file"></i> <span id="fileName"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+                <i class="fas fa-paper-plane"></i> Submit Claim
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to Dashboard
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function () {
+            // Remove any required attribute from file input
+            $('#supportingDocument').removeAttr('required');
+
+            // Real-time calculation and validation
+            function updateCalculations() {
+                let hours = parseFloat($('#hoursWorked').val()) || 0;
+                let rate = parseFloat($('#hourlyRate').val()) || 0;
+                let total = hours * rate;
+
+                // Update total amount
+                $('#totalAmount').val(total.toFixed(2));
+
+                // Update amount category
+                let category = $('#amountCategory');
+                if (total === 0) {
+                    category.text('No amount calculated').removeClass('text-info text-warning text-danger').addClass('text-muted');
+                } else if (total < 5000) {
+                    category.text('Standard claim amount').removeClass('text-info text-warning text-danger').addClass('text-info');
+                } else if (total < 15000) {
+                    category.text('Medium claim amount').removeClass('text-info text-warning text-danger').addClass('text-warning');
+                } else {
+                    category.text('Large claim amount - may require additional review').removeClass('text-info text-warning text-danger').addClass('text-danger');
+                }
+
+                // Validate hours
+                let hoursStatus = $('#hoursStatus');
+                if (hours < 1 || hours > 200) {
+                    hoursStatus.text('❌ Hours must be between 1-200').removeClass('text-success').addClass('text-danger');
+                } else {
+                    hoursStatus.text('✓ Valid hours').removeClass('text-danger').addClass('text-success');
+                }
+
+                // Validate rate
+                let rateStatus = $('#rateStatus');
+                if (rate < 50 || rate > 1000) {
+                    rateStatus.text('❌ Rate must be between R50-R1000').removeClass('text-success').addClass('text-danger');
+                } else {
+                    rateStatus.text('✓ Valid rate').removeClass('text-danger').addClass('text-success');
+                }
+            }
+
+            // Notes character counter
+            $('#notes').on('input', function() {
+                let length = $(this).val().length;
+                $('#notesCount').text(length);
+                if (length > 500) {
+                    $('#notesCount').addClass('text-danger');
+                } else {
+                    $('#notesCount').removeClass('text-danger');
+                }
+            });
+
+            // File upload preview - completely optional
+            $('#supportingDocument').on('change', function() {
+                let file = this.files[0];
+                if (file) {
+                    $('#fileName').text(file.name);
+                    $('#filePreview').show();
+
+                    // Validate file size (but don't prevent submission)
+                    if (file.size > 5 * 1024 * 1024) {
+                        $('#fileStatus').text('⚠️ File is large (max 5MB) but will be uploaded').removeClass('text-success text-danger').addClass('text-warning');
+                    } else {
+                        $('#fileStatus').text('✓ File ready for upload').removeClass('text-danger text-warning').addClass('text-success');
+                    }
+                } else {
+                    $('#filePreview').hide();
+                    $('#fileStatus').text('Optional: Maximum file size 5MB. Allowed types: PDF, DOCX, XLSX, JPG, PNG').removeClass('text-danger text-warning text-success');
+                }
+            });
+
+            // Remove any form validation that requires the file
+            $('#claimForm').on('submit', function(e) {
+                // Clear any file-related validation errors
+                $('[data-valmsg-for="supportingDocument"]').text('');
+                return true; 
+            });
+
+            // Bind events for real-time updates
+            $('#hoursWorked, #hourlyRate').on('input change', updateCalculations);
+            updateCalculations(); // Initial calculation
+        });
+    </script>
+}

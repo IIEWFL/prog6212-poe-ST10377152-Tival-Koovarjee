@@ -1,0 +1,109 @@
+﻿@model ContractMonthlyClaimSystem.Models.Claim
+@{
+    ViewData["Title"] = "Claim Details";
+}
+
+<div class="container">
+    <h2>Claim Details</h2>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">Claim #@Model.ClaimId</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Lecturer Name:</dt>
+                        <dd class="col-sm-8">@Model.LecturerName</dd>
+
+                        <dt class="col-sm-4">Claim Month:</dt>
+                        <dd class="col-sm-8">@Model.ClaimMonth.ToString("MMMM yyyy")</dd>
+
+                        <dt class="col-sm-4">Hours Worked:</dt>
+                        <dd class="col-sm-8">@Model.HoursWorked</dd>
+
+                        <dt class="col-sm-4">Hourly Rate:</dt>
+                        <dd class="col-sm-8">R @Model.HourlyRate.ToString("F2")</dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Total Amount:</dt>
+                        <dd class="col-sm-8"><strong>R @Model.TotalAmount.ToString("F2")</strong></dd>
+
+                        <dt class="col-sm-4">Status:</dt>
+                        <dd class="col-sm-8">
+                            <span class="badge @GetStatusBadgeClass(Model.Status)">@Model.Status</span>
+                        </dd>
+
+                        <dt class="col-sm-4">Submission Date:</dt>
+                        <dd class="col-sm-8">@Model.SubmissionDate.ToString("dd MMMM yyyy")</dd>
+
+                        <dt class="col-sm-4">Supporting Document:</dt>
+                        <dd class="col-sm-8">
+                            @if (!string.IsNullOrEmpty(Model.FileName))
+                            {
+                                <a asp-controller="Claims" asp-action="Download" asp-route-id="@Model.ClaimId"
+                                   class="btn btn-sm btn-outline-info">
+                                    Download @Model.FileName
+                                </a>
+                            }
+                            else
+                            {
+                                <span class="text-muted">No document uploaded</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.Notes))
+            {
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <dt>Additional Notes:</dt>
+                        <dd class="border p-2 rounded bg-light">@Model.Notes</dd>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="card-footer">
+            @if (ViewContext.RouteData.Values["action"]?.ToString() == "Review")
+            {
+                <form asp-action="Approve" method="post" class="d-inline">
+                    <input type="hidden" name="id" value="@Model.ClaimId" />
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-success">Approve Claim</button>
+                </form>
+                <form asp-action="Reject" method="post" class="d-inline">
+                    <input type="hidden" name="id" value="@Model.ClaimId" />
+                    @Html.AntiForgeryToken()
+                    <button type="submit" class="btn btn-danger">Reject Claim</button>
+                </form>
+            }
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@functions {
+    public string GetStatusBadgeClass(string status)
+    {
+        return status switch
+        {
+            "Approved" => "bg-success",
+            "Rejected" => "bg-danger",
+            "Pending" => "bg-warning text-dark",
+            _ => "bg-secondary"
+        };
+    }
+}

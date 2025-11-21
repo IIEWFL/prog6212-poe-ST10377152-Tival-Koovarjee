@@ -1,0 +1,116 @@
+﻿@model ContractMonthlyClaimSystem.Models.HRDashboardViewModel
+@{
+    ViewData["Title"] = "HR Dashboard";
+}
+
+<div class="container">
+    <h2><i class="fas fa-chart-line"></i> HR Dashboard</h2>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-triangle"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card text-white bg-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Total Claims</h5>
+                    <h2 class="card-text">@Model.TotalClaims</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-success">
+                <div class="card-body">
+                    <h5 class="card-title">Approved</h5>
+                    <h2 class="card-text">@Model.ApprovedClaims</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-warning">
+                <div class="card-body">
+                    <h5 class="card-title">Pending</h5>
+                    <h2 class="card-text">@Model.PendingClaims</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-info">
+                <div class="card-body">
+                    <h5 class="card-title">Total Amount</h5>
+                    <h2 class="card-text">R @Model.TotalAmount.ToString("F2")</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Quick Actions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <a asp-action="GenerateReport" class="btn btn-outline-primary">
+                            <i class="fas fa-file-pdf"></i> Generate Monthly Report
+                        </a>
+                        <a asp-action="LecturerManagement" class="btn btn-outline-success">
+                            <i class="fas fa-users"></i> Lecturer Management
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Recent Claims</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.RecentClaims.Any())
+                    {
+                        <div class="list-group">
+                            @foreach (var claim in Model.RecentClaims)
+                            {
+                                <div class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">@claim.LecturerName</h6>
+                                        <small>@claim.SubmissionDate.ToString("dd MMM")</small>
+                                    </div>
+                                    <p class="mb-1">
+                                        R @claim.TotalAmount.ToString("F2") -
+                                        <span class="badge @GetStatusBadgeClass(claim.Status)">@claim.Status</span>
+                                    </p>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No recent claims</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@functions {
+    public string GetStatusBadgeClass(string status)
+    {
+        return status switch
+        {
+            "Approved" => "bg-success",
+            "Rejected" => "bg-danger",
+            "Pending" => "bg-warning text-dark",
+            _ => "bg-secondary"
+        };
+    }
+}

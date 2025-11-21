@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Contract Monthly Claim System</h1>
+    <p class="lead">Streamlining claim submissions for contractor lecturers.</p>
+
+    <div class="mt-5">
+        <a class="btn btn-primary btn-lg mx-2" asp-controller="Claims" asp-action="Index">
+            <i class="fas fa-user-graduate"></i> Lecturer Portal
+        </a>
+        <a class="btn btn-success btn-lg mx-2" asp-controller="Claims" asp-action="Review">
+            <i class="fas fa-user-tie"></i> Coordinator Portal
+        </a>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Submit Claims</h5>
+                    <p class="card-text">Lecturers can easily submit monthly claims with supporting documents.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Review & Approve</h5>
+                    <p class="card-text">Coordinators can efficiently review and approve pending claims.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Track Status</h5>
+                    <p class="card-text">Real-time tracking of claim status throughout the approval process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:controllers\\claimscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\views\\claims\\review.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\claims\\review.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\views\\claims\\verificationreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\claims\\verificationreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\models\\verificationreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\verificationreportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:controllers\\hrcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\services\\claimverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:services\\claimverificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\models\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\reviewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\models\\claimverificationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\claimverificationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\views\\hr\\generatereport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\hr\\generatereport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\views\\claims\\submit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\claims\\submit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\models\\hrviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:models\\hrviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\views\\hr\\lecturermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\hr\\lecturermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|c:\\users\\tival\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\my web sites\\contractmonthlyclaimsystem\\views\\hr\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{499CB20B-5CA2-4E43-A1E2-EE3BA6DEF2B5}|ContractMonthlyClaimSystem.csproj|solutionrelative:views\\hr\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VerificationReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\VerificationReportViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\VerificationReportViewModel.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\VerificationReportViewModel.cs",
+              "RelativeToolTip": "Models\\VerificationReportViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T18:20:37.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReviewViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\ReviewViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ReviewViewModel.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\ReviewViewModel.cs",
+              "RelativeToolTip": "Models\\ReviewViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:46:53.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClaimVerificationResult.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\ClaimVerificationResult.cs",
+              "RelativeDocumentMoniker": "Models\\ClaimVerificationResult.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\ClaimVerificationResult.cs",
+              "RelativeToolTip": "Models\\ClaimVerificationResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:45:23.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VerificationReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\Claims\\VerificationReport.cshtml",
+              "RelativeDocumentMoniker": "Views\\Claims\\VerificationReport.cshtml",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\Claims\\VerificationReport.cshtml",
+              "RelativeToolTip": "Views\\Claims\\VerificationReport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T17:33:23.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Review.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\Claims\\Review.cshtml",
+              "RelativeDocumentMoniker": "Views\\Claims\\Review.cshtml",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\Claims\\Review.cshtml",
+              "RelativeToolTip": "Views\\Claims\\Review.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T17:32:20.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClaimVerificationService.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Services\\ClaimVerificationService.cs",
+              "RelativeDocumentMoniker": "Services\\ClaimVerificationService.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Services\\ClaimVerificationService.cs",
+              "RelativeToolTip": "Services\\ClaimVerificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:24:16.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HRController.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Controllers\\HRController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HRController.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Controllers\\HRController.cs",
+              "RelativeToolTip": "Controllers\\HRController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T16:56:28.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LecturerManagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\HR\\LecturerManagement.cshtml",
+              "RelativeDocumentMoniker": "Views\\HR\\LecturerManagement.cshtml",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\HR\\LecturerManagement.cshtml",
+              "RelativeToolTip": "Views\\HR\\LecturerManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T16:54:42.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GenerateReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\HR\\GenerateReport.cshtml",
+              "RelativeDocumentMoniker": "Views\\HR\\GenerateReport.cshtml",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\HR\\GenerateReport.cshtml",
+              "RelativeToolTip": "Views\\HR\\GenerateReport.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T16:53:52.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\HR\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Views\\HR\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\HR\\Dashboard.cshtml",
+              "RelativeToolTip": "Views\\HR\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T16:53:47.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T18:02:24.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Claim.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\Claim.cs",
+              "RelativeDocumentMoniker": "Models\\Claim.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\Claim.cs",
+              "RelativeToolTip": "Models\\Claim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:41:10.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Submit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\Claims\\Submit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Claims\\Submit.cshtml",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Views\\Claims\\Submit.cshtml",
+              "RelativeToolTip": "Views\\Claims\\Submit.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-17T10:38:12.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClaimsController.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Controllers\\ClaimsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClaimsController.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Controllers\\ClaimsController.cs",
+              "RelativeToolTip": "Controllers\\ClaimsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:36:44.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HRViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\HRViewModels.cs",
+              "RelativeDocumentMoniker": "Models\\HRViewModels.cs",
+              "ToolTip": "C:\\Users\\Tival\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\My Web Sites\\ContractMonthlyClaimSystem\\Models\\HRViewModels.cs",
+              "RelativeToolTip": "Models\\HRViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:17:34.774Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
