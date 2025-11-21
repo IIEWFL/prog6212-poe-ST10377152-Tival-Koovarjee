@@ -2,3 +2,4 @@
 
 All the code attribution is all in the program.cs file
 the powerpoint will be on github and on arc
+the video showcasing the application live is on this github 
